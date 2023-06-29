@@ -1,0 +1,220 @@
+header,
+footer {
+  background-color: #353750;
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+  padding: 5px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.small_header {
+  background-color: #353750;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  padding: 8px 0;
+  width: 100%;
+  text-align: center;
+  /* position: sticky; */
+}
+
+.loader_container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #000 1px solid;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #000;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+/* layout */
+.app_layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.outlet_div {
+  height: 100%;
+  width: 100%;
+  /* overflow-x: hidden;
+    overflow-y: auto; */
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.outlet_div::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2em;
+  border-top: 1px solid #000;
+}
+
+.BtnTicketFooter {
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.BtnTicketFooter_modal_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.BtnTicketFooter_modal_textSection_title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.BtnTicketFooter_modal_textSection {
+  /* background-color: #b5b6cc; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  max-width: 300px;
+}
+
+/* Bottom Modal */
+.modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: height 0.5s ease-out;
+  border-top: 1px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  z-index: 999;
+}
+
+.modal-content {
+  position: absolute;
+  /* bottom: 0; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal.open {
+  height: 70%;
+}
+
+/* end of modal */
+
+/* Bottom Modal */
+.full_modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.66);
+  overflow: hidden;
+  border-top: 1px solid #000;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full_modal-content {
+  /* border-radius: 15px; */
+  width: 100%;
+  /* height: 200px; */
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  gap: 25px;
+}
+
+.full_modal.full_open {
+  height: 100%;
+}
+
+/* end of modal */
+
+.popup_arrow {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+.popup_text {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+.popup_btn_footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  padding: 10px 20px;
+  gap: 20px;
+}
+
+/* rtl the MUI MobileTimePicker  */
+.muiltr-qb095s-MuiPickersLayout-root .MuiPickersLayout-toolbar {
+  direction: rtl;
+}

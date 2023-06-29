@@ -1,0 +1,49 @@
+I have reviewed the code and made some improvements, mainly by:
+
+- Reducing code repetition by creating a helper function `handleCases` to handle pending, fulfilled, and rejected cases for each API request.
+- Using a more descriptive name for the `updateLoading`, `updateData`, and `updateError` functions.
+
+Here's the updated code:
+
+```javascript
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import getUrl from "../app/baseUrl";
+
+const URL = getUrl();
+
+const createGetRequestThunk = (name, url) => {
+  return createAsyncThunk(name, async ({ startDate = new Date()
+      .toISOString()
+      .split("T")[0], timePeriod = "all" }) => {
+    try {
+      const response = await fetch(
+        `${url}?startDate=${startDate}&timePeriod=${timePeriod}`,
+        {
+          method: "GET",
+        }
+      );
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return await response.json();
+    } catch (error) {
+      console.error("Fetch error:", error);
+      throw error;
+    }
+  });
+};
+
+const createThunkActions = (name, endpoint) => {
+  return createGetRequestThunk(name, `${URL}${endpoint}`);
+};
+
+export const fetchTypeCounts = createThunkActions("dashboard/fetchTypeCounts", "/errors/count-by-type");
+export const fetchCountsByTechnician = createThunkActions("dashboard/fetchCountsByTechnician", "/errors/count-by-technician");
+export const fetchAverageResolutionTime = createThunkActions("dashboard/fetchAverageResolutionTime", "/errors/average-resolution-time");
+export const fetchCountByPriority = createThunkActions("dashboard/fetchCountByPriority", "/errors/count-by-priority");
+export const fetchMostCommon = createThunkActions("dashboard/fetchMostCommon", "/errors/most-common");
+export const fetchAverageResolutionByErrorType = createThunkActions("dashboard/fetchAverageResolutionByErrorType", "/errors/average-resolution-time-by-errortype");
+export const fetchAverageResolutionByTechnician = createThunkActions("dashboard/fetchAverageResolutionByTechnician", "/errors/average-resolution-time-by-technician");
+
+const initialState = {
+  typeCounts: { data: [], loading: "idle", error:

@@ -1,0 +1,107 @@
+.tickets_list_container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.errors_row_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.errors_row_div {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #d6d6d8;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.open_error_bg {
+  background-color: #7ac0e4;
+}
+
+.errors_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  margin-bottom: 80px;
+  /* overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    height: 700px;
+    padding-top: 600px; */
+}
+
+.errors_list_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  cursor: pointer;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+.errors_list_item::after {
+  content: "_________________________________________";
+  /* margin-right: 0m; */
+  display: block;
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  height: 12px;
+  color: #c7c4c4;
+  line-height: 30px;
+}
+
+.error_list_stack {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.error_list_stack_child {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.Yellow {
+  border-right: 5px solid #ed9a3c;
+  border-radius: 10px 0 0 10px !important;
+}
+
+.Green {
+  border-right: 5px solid #3aaf41;
+  border-radius: 10px 0 0 10px !important;
+}
+
+.Red {
+  border-right: 5px solid #f00605;
+  border-radius: 10px 0 0 10px !important;
+}
+
+span.errors_list_item:nth-child(even) {
+  background-color: #def2fd;
+}
+
+span.errors_list_item:nth-child(odd) {
+  background-color: #ececec;
+}

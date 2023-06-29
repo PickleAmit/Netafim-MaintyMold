@@ -1,0 +1,74 @@
+.myTickets_header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.moldlocation_list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.moldlocation_list_item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0% 5%;
+  border-radius: 10px;
+  gap: 5px;
+  padding: 10px 15px;
+}
+
+.moldlocation_list_item:nth-child(odd) {
+  background-color: #ececec;
+}
+
+.moldlocation_list_item:nth-child(even) {
+  background-color: #def2fd;
+}
+
+.moldlocation_divider {
+  width: 90%;
+  height: 1px;
+  margin: 5px auto;
+  background-color: #ccc;
+}
+
+.full_modal-content2 {
+  direction: rtl;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 20px;
+  width: 80%;
+  height: 50vh;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.full_modal-content2_DarkBG {
+  background-color: black;
+}
+
+.small_popup {
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.small_popup_DarkBG {
+  background-color: black;
+}
+
+.small_popup_close {
+  position: absolute;
+  top: 0.2em;
+  right: 0.2em;
+}
