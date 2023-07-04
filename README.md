@@ -2,6 +2,10 @@
 
 MaintyMold is a comprehensive error management system developed for Netafim. Built using React for the client-side and C# .NET Entity Framework for the backend, this project aims to streamline the process of error tracking by facilitating the opening, closing, and information retrieval of all errors.
 
+## Important
+
+This was a finals project and most of the features that are using the api calls will not work because the backend and the database (SQL) was in the school's server.
+
 ## Installation
 
 Before you start, make sure you have Node.js and NPM installed on your machine.
