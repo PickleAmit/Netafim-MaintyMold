@@ -48,6 +48,15 @@ And more, as specified in the `package.json` file.
 
 If you have any questions or want to discuss this project further, feel free to reach out to me.
 
+## Screenshots
+
+<img width="181" alt="mainScreen" src="https://github.com/PickleAmit/Netafim-MaintoMold/assets/116790985/48f54e77-dcdf-4a6a-a21f-d9eac603c0ec">
+<img width="181" alt="constraintScreen" src="https://github.com/PickleAmit/Netafim-MaintoMold/assets/116790985/746a5ad2-8f80-4891-9f4c-1258d472ec06">
+<img width="180" alt="image" src="https://github.com/PickleAmit/Netafim-MaintoMold/assets/116790985/03c19cfc-460a-41bb-bdbb-a53074e481b3">
+<img width="180" alt="image" src="https://github.com/PickleAmit/Netafim-MaintoMold/assets/116790985/b5d81f3f-2f66-49d8-9828-2c9c4bbfcb87">
+<img width="182" alt="image" src="https://github.com/PickleAmit/Netafim-MaintoMold/assets/116790985/26cfb276-642b-41ee-bd60-eb4d4f6384bd">
+
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
