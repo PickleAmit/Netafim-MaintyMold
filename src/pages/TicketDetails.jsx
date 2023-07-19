@@ -343,12 +343,23 @@ const TicketDetails = () => {
             sx={{ direction: "ltr" }}
             open={showModal}
             onClose={() => setShowModal(false)}
+            PaperProps={{
+              style: {
+                borderColor: mode === "dark" ? "black" : "white",
+                borderWidth: "2px",
+                borderStyle: "solid",
+              },
+            }}
           >
-            <DialogTitle sx={{ textAlign: "center" }}>טכנאי מומלץ</DialogTitle>
-            <DialogContent>
+            <DialogTitle sx={{ textAlign: "center", color: "white" }}>
+              טכנאי מומלץ
+            </DialogTitle>
+            <DialogContent sx={{ color: "white" }}>
               הטכנאי המומלץ לתקלה זו : {technicianMap[predictedTechnician]}
             </DialogContent>
-            <Button onClick={() => setShowModal(false)}>Close</Button>
+            <Button onClick={() => setShowModal(false)} sx={{ color: "white" }}>
+              סגור
+            </Button>
           </Dialog>
         )}
         <ToasterPopup />
