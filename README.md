@@ -56,6 +56,10 @@ If you have any questions or want to discuss this project further, feel free to 
 <img width="180" alt="image" src="https://github.com/PickleAmit/Netafim-MaintoMold/assets/116790985/b5d81f3f-2f66-49d8-9828-2c9c4bbfcb87">
 <img width="182" alt="image" src="https://github.com/PickleAmit/Netafim-MaintoMold/assets/116790985/26cfb276-642b-41ee-bd60-eb4d4f6384bd">
 
+## Video
+
+https://github.com/PickleAmit/Netafim-MaintyMold/assets/116790985/81602896-d645-411a-bc64-01f22957291a
+
 
 ## License
 
